@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ingredients used in Green Crunch Organics biscuits, cookies and healthy snacks.">
+<title>Ingredients | Green Crunch Organics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,Arial,sans-serif;background:#fdfbee;color:#1c3a14}
+a{text-decoration:none;color:inherit}
+:root{--green:#0c4705;--green2:#1a6512;--gold:#c99a2e;--cream:#fdfbee}
+svg{display:block}
+
+/* top bar */
+.top{background:var(--green);color:#fff;font-size:17px;font-weight:500;height:44px;padding:0 5.5%;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.top span{display:flex;align-items:center;gap:10px}
+.top .sep{width:1px;height:22px;background:#ffffff80;margin:0 6px}
+.top svg{width:20px;height:20px;fill:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:var(--cream);height:76px;box-shadow:0 3px 12px #0000000d}
+nav{height:76px;padding:0 5.5% 0 6.5%;display:flex;align-items:center;justify-content:space-between}
+.logo img{height:66px;width:auto;display:block}
+.menu{display:flex;align-items:center;gap:8px;list-style:none;margin-left:auto;margin-right:60px}
+.menu a{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:18px;font-weight:500;color:#1b2a12;padding:11px 22px;border-radius:30px}
+.menu a:hover{color:var(--green2)}
+.menu a.active{background:var(--green2);color:#fff}
+.menu svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:3}
+.cart{margin-right:40px}
+.cart svg{width:46px;height:46px;fill:var(--green2)}
+.burger{display:none;background:none;border:0;font-size:30px;color:var(--green2);cursor:pointer}
+
+/* page banner */
+.banner{position:relative;overflow:hidden;background:linear-gradient(180deg,#f7f9ec 0%,#f9f3e1 100%);padding:56px 6% 50px;text-align:center}
+.banner .leaves{position:absolute;left:0;top:0;width:115px;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent),linear-gradient(180deg,#000 50%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,#000 55%,transparent),linear-gradient(180deg,#000 50%,transparent);mask-composite:intersect}
+.banner .leaves.r{left:auto;right:0;transform:scaleX(-1)}
+.crumb{font-size:15px;color:#5b6b4c;margin-bottom:10px}
+.crumb a{color:var(--green2);font-weight:600}
+.banner h1{font:900 50px/1.1 Merriweather,Georgia,serif;color:#174d14}
+.banner p{font:700 26px Merriweather,Georgia,serif;color:var(--gold);margin-top:12px}
+
+/* intro */
+.wrap{max-width:1180px;margin:auto;padding:0 28px}
+.intro{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center;padding:60px 0 50px}
+.intro img{width:100%;border-radius:20px;box-shadow:0 10px 30px #0000001a}
+.intro h2{font:700 34px/1.25 Merriweather,Georgia,serif;color:#174d14;margin-bottom:18px}
+.intro h2 em{font-style:normal;color:var(--gold)}
+.intro p{font-size:17px;line-height:1.8;color:#33402a;margin-bottom:14px}
+
+/* titles */
+.title{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:28px}
+.title i{height:3px;width:160px;background:linear-gradient(90deg,transparent,#d9a72c)}
+.title i:last-child{background:linear-gradient(90deg,#d9a72c,transparent)}
+.title h2{font:700 36px Merriweather,Georgia,serif;color:#174d14;display:flex;align-items:center;gap:12px}
+.title svg{width:38px;height:38px}
+
+/* vision + mission */
+.vm{display:grid;grid-template-columns:1fr 1.4fr;gap:22px;padding-bottom:60px}
+.card{background:#fffef8;border:1px solid #ebe5cc;border-radius:18px;padding:32px 34px;box-shadow:0 5px 16px #0000000a}
+.card .ic{width:58px;height:58px;border-radius:50%;background:#e6f0ab;display:grid;place-items:center;margin-bottom:16px}
+.card .ic svg{width:30px;height:30px}
+.card h3{font:700 26px Merriweather,Georgia,serif;color:#174d14;margin-bottom:12px}
+.card p{font-size:17px;line-height:1.75;color:#33402a}
+.vision{background:linear-gradient(160deg,#f6f2d3,#eef2c8)}
+.list{list-style:none}
+.list li{display:flex;gap:12px;font-size:17px;line-height:1.55;color:#33402a;padding:7px 0}
+.list li::before{content:"";flex:none;width:22px;height:22px;margin-top:2px;border-radius:50%;background:var(--green2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12l4 4 8-8' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* values */
+.values{background:#e6f0ab;padding:56px 0 60px}
+.vgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.value{flex:1 1 190px;max-width:240px;background:#fffef8;border-radius:16px;padding:26px 18px;text-align:center;border:1px solid #dbe39a}
+.value svg{width:48px;height:48px;margin:0 auto 12px}
+.value h3{font:700 21px Merriweather,Georgia,serif;color:#174d14;margin-bottom:8px}
+.value p{font-size:15px;line-height:1.55;color:#3a4630}
+
+/* cta */
+.cta{text-align:center;padding:56px 20px 60px}
+.cta h2{font:900 38px Merriweather,Georgia,serif;color:#174d14}
+.cta h2 span{color:var(--gold)}
+.cta p{font-size:18px;color:#33402a;margin:12px 0 4px}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--green);color:#fff;font-size:19px;font-weight:500;padding:11px 34px;border-radius:30px;margin:16px 8px 0}
+.btn svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.5}
+.btn.alt{background:#20b85a}
+.btn:hover{filter:brightness(1.15)}
+
+/* footer */
+footer{background:#124409;color:#fff;min-height:113px;padding:8px 2.3% 8px 5.2%;display:flex;align-items:center;gap:30px;overflow:hidden}
+footer .flogo{width:244px;flex:none}
+footer .vr{display:block;flex:none;width:2px;height:64px;background:#c99a2e}
+footer .tag{font:italic 400 25px Merriweather,Georgia,serif;letter-spacing:-.3px;white-space:nowrap}
+.social{display:flex;gap:9px}
+.social a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:2px solid #fff}
+.social svg{width:20px;height:20px;fill:#fff}
+.links{display:flex;gap:10px;font-size:14px;white-space:nowrap}
+.links a+a::before{content:"|";margin-right:10px}
+.wa{flex:none;display:flex;align-items:center;gap:12px;border:2px solid #fff;border-radius:12px;background:#0f7a1c;padding:8px 16px;font-size:17px;line-height:1.2;margin-left:auto}
+.wa svg{width:40px;height:40px;fill:#fff}
+
+/* responsive */
+@media(max-width:1300px){
+.menu{margin-right:20px}.menu a{padding:10px 14px;font-size:16px}.cart{margin-right:10px}
+footer{gap:20px;flex-wrap:wrap;justify-content:center}footer .tag{font-size:20px}.wa{margin-left:0}
+}
+@media(max-width:900px){
+.top{font-size:13px;padding:0 16px}.top .sep,.top .mail{display:none}
+nav{padding:0 16px}.logo img{width:180px}
+.burger{display:block}
+.menu{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;background:var(--cream);padding:12px;box-shadow:0 8px 16px #0001;margin:0}
+.menu.open{display:flex}
+.banner{padding:40px 16px}.banner .leaves{width:70px}
+.banner h1{font-size:34px}.banner p{font-size:20px}
+.wrap{padding:0 16px}
+.intro,.vm{grid-template-columns:1fr;gap:24px}
+.intro{padding:36px 0}.intro h2{font-size:27px}
+.card{padding:24px 20px}
+.title i{width:40px}.title h2{font-size:27px}
+.value{flex-basis:140px}
+.cta h2{font-size:28px}
+footer{flex-direction:column;text-align:center;padding:24px 16px}footer .vr{display:none}.links{flex-wrap:wrap;justify-content:center}
+}
+
+/* ingredients */
+.jump{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:28px 16px 6px}
+.jump a{background:#fffef8;border:1px solid #dbe39a;color:#174d14;font-weight:500;font-size:15px;padding:8px 18px;border-radius:30px}
+.jump a:hover{background:var(--green2);color:#fff;border-color:var(--green2)}
+.groups{padding:30px 0 60px;display:grid;gap:26px}
+.group{scroll-margin-top:100px;background:#fffef8;border:1px solid #ebe5cc;border-radius:20px;padding:30px 32px;box-shadow:0 5px 16px #0000000a}
+.ghead{display:flex;align-items:center;gap:16px;margin-bottom:20px;padding-bottom:16px;border-bottom:2px dashed #e6dcae}
+.ghead .ic{flex:none;width:58px;height:58px;border-radius:50%;background:#e6f0ab;display:grid;place-items:center;font-size:28px}
+.ghead h2{font:700 26px Merriweather,Georgia,serif;color:#174d14}
+.ghead p{font-size:15px;color:var(--gold);font-weight:600;margin-top:2px}
+.items{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.item{background:linear-gradient(160deg,#fbf8e6,#f3f5d8);border-radius:14px;padding:16px 18px;border-left:4px solid var(--green2)}
+.item h3{font-size:17px;font-weight:600;color:#174d14;margin-bottom:5px}
+.item p{font-size:15px;line-height:1.6;color:#3a4630}
+.item .opt{display:inline-block;font-size:12px;font-weight:600;background:#f8e7b8;color:#8a6410;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+@media(max-width:900px){.group{padding:22px 18px}.items{grid-template-columns:1fr}.ghead h2{font-size:21px}}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+<span><svg viewBox="0 0 24 24"><path d="M20 3C10 3 4 8 4 16c0 1.5.3 3 .8 4.3l1.4-1.4C9 12 14 9 18 7c-4 3-8 7-10 13h2c1-3 3-6 5-8 4-.5 7-5 5-12z"/></svg>Pure &nbsp;•&nbsp; Healthy &nbsp;•&nbsp; Delicious</span>
+<span><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>+91 9629935384<i class="sep"></i><span class="mail"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg>info@greencrunchorganics.in</span></span>
+</div>
+
+<header>
+<nav>
+<a class="logo" href="index.html"><img src="images/logo.png" alt="Green Crunch - Fresh &amp; Premium"></a>
+<ul class="menu" id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#products">Products <svg viewBox="0 0 24 24"><path d="M5 9l7 7 7-7"/></svg></a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="ingredients.html" class="active">Ingredients</a></li>
+<li><a href="index.html#categories">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="cart" href="index.html#products" aria-label="Shop products"><svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l1 2H22l-3.5 8.5c-.3.9-1.1 1.5-2 1.5H8.1l-.9 1.6V16H19v2H5.6c-1.1 0-1.7-1.2-1.2-2.1L6 13 2.7 4H1z"/></svg></a>
+<button class="burger" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+</header>
+
+<section class="banner">
+<img class="leaves" src="images/leaves-left.png" alt="">
+<img class="leaves r" src="images/leaves-left.png" alt="">
+<div class="crumb"><a href="index.html">Home</a> &nbsp;›&nbsp; Ingredients</div>
+<h1>Our Ingredients</h1>
+<p>What goes into every Green Crunch bite</p>
+</section>
+
+<nav class="jump" aria-label="Ingredient categories">
+<a href="#flours">🌾 Base &amp; Flours</a>
+<a href="#fats">🧈 Fats &amp; Shortening</a>
+<a href="#sweeteners">🍯 Sweeteners</a>
+<a href="#leavening">🥣 Leavening</a>
+<a href="#liquids">🥛 Liquids</a>
+<a href="#inclusions">🥜 Inclusions &amp; Aromas</a>
+</nav>
+
+<section class="wrap groups">
+
+<div class="group" id="flours">
+<div class="ghead"><div class="ic">🌾</div><div><h2>Core Base &amp; Flours</h2><p>Structure</p></div></div>
+<div class="items">
+<div class="item"><h3>Refined Wheat Flour (Maida)</h3><p>Traditional base for crisp, tender bakery biscuits.</p></div>
+<div class="item"><h3>Whole Wheat Flour (Atta)</h3><p>Used for digestive and high-fiber biscuits.</p></div>
+<div class="item"><h3>Millet Flours</h3><p>Ragi (Finger Millet), Bajra (Pearl Millet), Jowar (Sorghum), Foxtail, and Barnyard millet flours.</p></div>
+<div class="item"><h3>Oat Flour / Rolled Oats</h3><p>Adds dietary fiber, texture, and nutty notes.</p></div>
+<div class="item"><h3>Cornstarch / Tapioca Starch</h3><p>Modifies dough strength for an extra-crispy snap.</p></div>
+</div>
+</div>
+
+<div class="group" id="fats">
+<div class="ghead"><div class="ic">🧈</div><div><h2>Fats &amp; Shortening</h2><p>Texture &amp; Flakiness</p></div></div>
+<div class="items">
+<div class="item"><h3>Butter</h3><p>Imparts rich aroma, delicate melt-in-mouth mouthfeel, and golden finish.</p></div>
+<div class="item"><h3>Pure Ghee</h3><p>Traditional fat used for Nankhatai and Indian shortbread biscuits.</p></div>
+<div class="item"><h3>Vegetable Oil / Cold-Pressed Coconut Oil</h3><p>Neutral or aromatic plant-based fats for clean-label/vegan lines.</p></div>
+<div class="item"><h3>Bakery Shortening / Margarine</h3><p>Commercial aerated fats for extended shelf stability and flaky structure.</p></div>
+</div>
+</div>
+
+<div class="group" id="sweeteners">
+<div class="ghead"><div class="ic">🍯</div><div><h2>Sweeteners &amp; Flavor Balancers</h2><p>Sweetness &amp; Balance</p></div></div>
+<div class="items">
+<div class="item"><h3>Cane Sugar / Powdered Sugar</h3><p>Standard sweetness and structural crispness.</p></div>
+<div class="item"><h3>Jaggery Powder / Brown Sugar / Palm Sugar</h3><p>Unrefined sweetening agents rich in molasses notes for organic ranges.</p></div>
+<div class="item"><h3>Invert Sugar Syrup / Honey / Malt Extract</h3><p>Aids uniform browning, prevents crystallization, and balances moisture.</p></div>
+<div class="item"><h3>Iodized Salt / Sea Salt</h3><p>Sharpens sweetness and strengthens the gluten network.</p></div>
+</div>
+</div>
+
+<div class="group" id="leavening">
+<div class="ghead"><div class="ic">🥣</div><div><h2>Leavening &amp; Dough Conditioning Agents</h2><p>Rise &amp; Crunch</p></div></div>
+<div class="items">
+<div class="item"><h3>Baking Powder</h3><p>Dual-action chemical leavener for vertical rise and aerated crumb.</p></div>
+<div class="item"><h3>Baking Soda (Sodium Bicarbonate)</h3><p>Aids spread, browning, and light aerated texture.</p></div>
+<div class="item"><h3>Ammonium Bicarbonate (Baker&rsquo;s Ammonia)</h3><p>Commercial agent for low-moisture, extra-crisp biscuits with hollow crunch.</p></div>
+<div class="item"><h3>Soy Lecithin / Plant Lecithin (Emulsifier)</h3><p>Ensures fat and moisture homogenize uniformly without dough separation.</p></div>
+</div>
+</div>
+
+<div class="group" id="liquids">
+<div class="ghead"><div class="ic">🥛</div><div><h2>Liquids &amp; Hydration</h2><p>Binding &amp; Richness</p></div></div>
+<div class="items">
+<div class="item"><h3>Fresh Milk / Skim Milk Powder (SMP)</h3><p>Adds milky richness, crust color, and binding.</p></div>
+<div class="item"><h3>Filtered Water</h3><p>Hydrates dry starches and dissolves soluble leaveners.</p></div>
+<div class="item"><h3>Whole Eggs / Liquid Egg Whites <span class="opt">Optional</span></h3><p>Adds protein structure, emulsification, and richness (omitted in 100% vegetarian biscuits).</p></div>
+</div>
+</div>
+
+<div class="group" id="inclusions">
+<div class="ghead"><div class="ic">🥜</div><div><h2>Inclusions, Spices &amp; Natural Aromas</h2><p>Flavor &amp; Crunch</p></div></div>
+<div class="items">
+<div class="item"><h3>Natural Extracts</h3><p>Real Vanilla Bean Extract, Almond Extract, or Cardamom Oleoresin.</p></div>
+<div class="item"><h3>Nuts &amp; Dry Fruits</h3><p>Roasted Cashews, Almond slivers, Pistachios, and Golden Raisins.</p></div>
+<div class="item"><h3>Functional Seeds</h3><p>Chia seeds, Roasted Flaxseeds, Sesame seeds, and Pumpkin seeds.</p></div>
+<div class="item"><h3>Cocoa &amp; Spices</h3><p>Dutch-processed Cocoa Powder, Cinnamon, Nutmeg, or Ginger powder.</p></div>
+</div>
+</div>
+
+</section>
+
+<section class="cta">
+<h2>Green Crunch Organics – <span>Healthy Bites. Happy Life!</span></h2>
+<p>Try our biscuits, cookies and healthy snacks today.</p>
+<a class="btn" href="index.html#products">Shop Now <svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<a class="btn alt" href="https://wa.me/919629935384?text=Hello%20Green%20Crunch%20Organics%2C%20I%20want%20to%20know%20about%20your%20products." target="_blank">Chat on WhatsApp</a>
+</section>
+
+<footer id="contact">
+<img class="flogo" src="images/logo-footer.png" alt="Green Crunch - Fresh &amp; Premium">
+<i class="vr"></i>
+<div class="tag">Eat Healthy... Live Healthy...</div>
+<i class="vr"></i>
+<div class="social">
+<a href="#" aria-label="Facebook" style="background:#1877f2"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+<a href="#" aria-label="Instagram" style="background:linear-gradient(45deg,#f9a825,#e1306c,#833ab4)"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm5 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM17 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+<a href="#" aria-label="YouTube" style="background:#e01b1b"><svg viewBox="0 0 24 24"><path d="M9 7.5v9l8-4.5z"/></svg></a>
+<a href="https://wa.me/919629935384" target="_blank" aria-label="WhatsApp" style="background:#25b04b"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.3 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.4-.3-2-1c-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5z"/></svg></a>
+</div>
+<i class="vr"></i>
+<div class="links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Sitemap</a></div>
+<a class="wa" href="https://wa.me/919629935384?text=Hello%20Green%20Crunch%20Organics%2C%20I%20want%20to%20know%20about%20your%20products." target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.3 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4l-.4-.3-2-1c-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5z"/></svg>Chat on<br>WhatsApp</a>
+</footer>
+
+</body>
+</html>
