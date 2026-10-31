@@ -2,7 +2,7 @@
 const BUSINESS = {
   // Use country code + number, digits only. Example India: 919876543210
   whatsappNumber: "919629935384",
-  email: "hello@yourbusiness.com",
+  email: "hello@shiyammba23.com",
   // Paste your active payment link from your payment provider here.
   // Example: https://rzp.io/i/your-payment-link
   paymentLink: ""
@@ -13,7 +13,7 @@ const BUSINESS = {
    your ingredients, process and applicable certifications support the claim. */
 const PRODUCTS = [
   { id: 1, name: "Millet Crunch Biscuits", description: "A crisp snack idea with millet-based ingredients.", price: 80, pack: "200 g", emoji: "🌾", tag: "CUSTOMER FAVOURITE" },
-  { id: 2, name: "Oats Cookies", description: "A satisfying cookie with oats and nutty goodness.", price: 150, pack: "200 g", emoji: "🥜", tag: "WHOLESOME PICK" },
+  { id: 2, name: "Oats Cookies", description: "A satisfying cookie with oats and nutty goodness.", price: 120, pack: "200 g", emoji: "🥜", tag: "WHOLESOME PICK" },
   { id: 3, name: "Classic Jaggery Biscuits", description: "A simple biscuit concept with a warm jaggery note.", price: 130, pack: "200 g", emoji: "🍪", tag: "MADE WITH CARE" }
 ];
 
