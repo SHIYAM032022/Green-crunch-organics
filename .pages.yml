@@ -1,0 +1,35 @@
+media:
+  input: images
+  output: images
+
+content:
+  - name: products
+    label: Products
+    type: file
+    path: products.json
+    format: json
+    fields:
+      - name: products
+        label: Products
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Product name
+            type: string
+            required: true
+          - name: desc
+            label: Short description
+            type: string
+          - name: price
+            label: Price (₹)
+            type: number
+            required: true
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: available
+            label: Show on website
+            type: boolean
+            default: true

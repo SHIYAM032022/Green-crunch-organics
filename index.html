@@ -178,11 +178,11 @@ footer{flex-direction:column;text-align:center;padding:24px 16px}footer .vr{disp
 
 <div class="title"><i></i><h2><svg viewBox="0 0 40 40"><path d="M19 34C9 30 5 20 8 9c8 3 13 10 11 25z" fill="#2f8a1f"/><path d="M21 34c1-12 6-20 15-22 1 11-5 19-15 22z" fill="#174d14"/></svg>Our Products</h2><i></i></div>
 
-<section class="products" id="products">
-<div class="product"><img src="images/p-millet.jpg" alt="Millet Biscuits pack"><div><h3>Millet Biscuits</h3><p>Rich in Fiber &amp; Nutrition</p><div class="price">₹120</div><button class="add" onclick="addCart('Millet Biscuits',120)"><svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l1 2H22l-3.5 8.5c-.3.9-1.1 1.5-2 1.5H8.1l-.9 1.6V16H19v2H5.6c-1.1 0-1.7-1.2-1.2-2.1L6 13 2.7 4H1z"/></svg>Add to Cart</button></div></div>
-<div class="product"><img src="images/p-oats.jpg" alt="Oats Cookies pack"><div><h3>Oats Cookies</h3><p>Healthy &amp; Delicious</p><div class="price">₹150</div><button class="add" onclick="addCart('Oats Cookies',150)"><svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l1 2H22l-3.5 8.5c-.3.9-1.1 1.5-2 1.5H8.1l-.9 1.6V16H19v2H5.6c-1.1 0-1.7-1.2-1.2-2.1L6 13 2.7 4H1z"/></svg>Add to Cart</button></div></div>
-<div class="product"><img src="images/p-nuts.jpg" alt="Mixed Nuts Snacks pack"><div><h3>Mixed Nuts Snacks</h3><p>Power-Packed Goodness</p><div class="price">₹180</div><button class="add" onclick="addCart('Mixed Nuts Snacks',180)"><svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l1 2H22l-3.5 8.5c-.3.9-1.1 1.5-2 1.5H8.1l-.9 1.6V16H19v2H5.6c-1.1 0-1.7-1.2-1.2-2.1L6 13 2.7 4H1z"/></svg>Add to Cart</button></div></div>
-</section>
+<!-- Products come from products.json (edit them in Pages CMS) -->
+<section class="products" id="products"></section>
+<template id="productCard">
+<div class="product"><img src="" alt=""><div><h3></h3><p></p><div class="price"></div><button class="add"><svg viewBox="0 0 24 24"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2h3.3l1 2H22l-3.5 8.5c-.3.9-1.1 1.5-2 1.5H8.1l-.9 1.6V16H19v2H5.6c-1.1 0-1.7-1.2-1.2-2.1L6 13 2.7 4H1z"/></svg>Add to Cart</button></div></div>
+</template>
 
 <section class="benefits" id="ingredients">
 <div><svg viewBox="0 0 50 50"><path d="M22 44C9 40 4 27 8 12c11 4 17 14 14 32z" fill="#174d14"/><path d="M26 44c1-15 8-26 20-28 1 14-7 25-20 28z" fill="#174d14"/></svg>100% Organic<br>Ingredients</div>
@@ -218,6 +218,28 @@ footer{flex-direction:column;text-align:center;padding:24px 16px}footer .vr{disp
 
 <script>
 let cart={};
+
+function loadProducts(){
+const grid=document.getElementById("products");
+const tpl=document.getElementById("productCard");
+fetch("products.json",{cache:"no-cache"})
+.then(r=>r.json())
+.then(data=>{
+(data.products||[]).filter(p=>p.available!==false).forEach(p=>{
+const card=tpl.content.cloneNode(true);
+const img=card.querySelector("img");
+img.src=(p.image||"").replace(/^\/+/,"");
+img.alt=p.name+" pack";
+card.querySelector("h3").textContent=p.name;
+card.querySelector("p").textContent=p.desc||"";
+card.querySelector(".price").textContent="₹"+p.price;
+card.querySelector(".add").addEventListener("click",()=>addCart(p.name,Number(p.price)));
+grid.appendChild(card);
+});
+})
+.catch(()=>{grid.innerHTML='<p style="grid-column:1/-1;text-align:center">Products could not be loaded. Please refresh the page.</p>';});
+}
+loadProducts();
 
 function addCart(name,price){
 if(!cart[name]) cart[name]={price:price,qty:0};

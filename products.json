@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Millet Biscuits",
+      "desc": "Rich in Fiber & Nutrition",
+      "price": 120,
+      "image": "images/p-millet.jpg",
+      "available": true
+    },
+    {
+      "name": "Oats Cookies",
+      "desc": "Healthy & Delicious",
+      "price": 150,
+      "image": "images/p-oats.jpg",
+      "available": true
+    },
+    {
+      "name": "Mixed Nuts Snacks",
+      "desc": "Power-Packed Goodness",
+      "price": 180,
+      "image": "images/p-nuts.jpg",
+      "available": true
+    }
+  ]
+}
