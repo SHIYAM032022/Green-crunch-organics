@@ -12,8 +12,8 @@ const BUSINESS = {
    with your actual products. Do not claim "organic" or "chemical-free" unless
    your ingredients, process and applicable certifications support the claim. */
 const PRODUCTS = [
-  { id: 1, name: "Millet Crunch Biscuits", description: "A crisp snack idea with millet-based ingredients.", price: 120, pack: "200 g", emoji: "🌾", tag: "CUSTOMER FAVOURITE" },
-  { id: 2, name: "Oats & Nut Cookies", description: "A satisfying cookie with oats and nutty goodness.", price: 150, pack: "200 g", emoji: "🥜", tag: "WHOLESOME PICK" },
+  { id: 1, name: "Millet Crunch Biscuits", description: "A crisp snack idea with millet-based ingredients.", price: 80, pack: "200 g", emoji: "🌾", tag: "CUSTOMER FAVOURITE" },
+  { id: 2, name: "Oats Cookies", description: "A satisfying cookie with oats and nutty goodness.", price: 150, pack: "200 g", emoji: "🥜", tag: "WHOLESOME PICK" },
   { id: 3, name: "Classic Jaggery Biscuits", description: "A simple biscuit concept with a warm jaggery note.", price: 130, pack: "200 g", emoji: "🍪", tag: "MADE WITH CARE" }
 ];
 
