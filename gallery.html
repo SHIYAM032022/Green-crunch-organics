@@ -151,25 +151,6 @@ footer{flex-direction:column;text-align:center;padding:24px 16px}footer .vr{disp
 .lightbox img{max-width:min(1000px,100%);max-height:78vh;border-radius:14px}
 .lightbox p{color:#fff;font:700 20px Merriweather,Georgia,serif;margin-top:14px;text-align:center}
 
-/* gallery: video storyboard */
-.video{background:#e6f0ab;padding:56px 0 60px}
-.vbox{display:grid;grid-template-columns:1fr 1.25fr;gap:28px;align-items:start}
-.player{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:16/9;background:#0c3505}
-.player img{width:100%;height:100%;object-fit:cover;opacity:.55}
-.player div{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;gap:10px}
-.player i{width:72px;height:72px;border-radius:50%;background:#ffffffe6;display:grid;place-items:center}
-.player i svg{width:30px;height:30px;fill:var(--green2);margin-left:5px}
-.player b{font:700 22px Merriweather,Georgia,serif}
-.player span{font-size:14px;background:#c99a2e;padding:4px 12px;border-radius:20px}
-.vnote{margin-top:16px;font-size:15px;line-height:1.7;color:#33402a}
-.scenes{list-style:none;display:grid;gap:12px}
-.scene{display:grid;grid-template-columns:86px 1fr;gap:14px;background:#fffef8;border-radius:14px;padding:16px 18px;border:1px solid #dbe39a}
-.scene time{font-weight:600;font-size:14px;color:#fff;background:var(--green2);border-radius:10px;height:fit-content;padding:6px 0;text-align:center}
-.scene h3{font:700 17px Merriweather,Georgia,serif;color:#174d14;margin-bottom:4px}
-.scene p{font-size:14.5px;line-height:1.55;color:#3a4630}
-.scene q{display:block;font-style:italic;color:#174d14;margin-top:6px}
-.scene .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.scene .tags span{font-size:12px;font-weight:600;background:#f8e7b8;color:#8a6410;padding:3px 9px;border-radius:10px}
 
 @media(max-width:900px){
 .pitch{padding-top:36px;padding-bottom:10px}.pitch h2{font-size:28px}.pitch>p{font-size:16px}
@@ -177,8 +158,6 @@ footer{flex-direction:column;text-align:center;padding:24px 16px}footer .vr{disp
 .grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
 .shot.big{grid-column:span 2;grid-row:span 1}
 .shot figcaption b{font-size:15px}.shot figcaption span{display:none}
-.vbox{grid-template-columns:1fr}
-.scene{grid-template-columns:1fr}.scene time{width:96px}
 }
 </style>
 </head>
@@ -235,25 +214,6 @@ footer{flex-direction:column;text-align:center;padding:24px 16px}footer .vr{disp
 <figure class="shot" data-cap="Tea-Time Pairing"><img src="images/cat-biscuits.jpg" alt="Stack of golden biscuits"><figcaption><b>Tea-Time Pairing</b><span>Your perfect daily crunch with chai or coffee.</span></figcaption></figure>
 <figure class="shot" data-cap="Oats Cookies"><img src="images/p-oats.jpg" alt="Green Crunch Oats Cookies pack"><figcaption><b>Oats Cookies</b><span>Healthy &amp; delicious.</span></figcaption></figure>
 <figure class="shot" data-cap="Mixed Nuts Snacks"><img src="images/p-nuts.jpg" alt="Green Crunch Mixed Nuts Snacks pack"><figcaption><b>Mixed Nuts Snacks</b><span>Power-packed goodness.</span></figcaption></figure>
-</div>
-</section>
-
-<section class="video">
-<div class="wrap">
-<div class="title"><i></i><h2><svg viewBox="0 0 40 40"><path d="M19 34C9 30 5 20 8 9c8 3 13 10 11 25z" fill="#2f8a1f"/><path d="M21 34c1-12 6-20 15-22 1 11-5 19-15 22z" fill="#174d14"/></svg>Our Story in 30 Seconds</h2><i></i></div>
-<div class="vbox">
-<div>
-<div class="player"><img src="images/hero-right.jpg" alt=""><div><i><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></i><b>The Perfect Daily Crunch</b><span>Video coming soon</span></div></div>
-<p class="vnote">From the first crunch to your tea-time table — see how every Green Crunch biscuit is made with honest ingredients and baked fresh in small batches.</p>
-</div>
-<ol class="scenes">
-<li class="scene"><time>0:00–0:05</time><div><h3>The Crunch</h3><p>A golden-brown biscuit snaps right in front of the camera, crisp crumbs flying.</p><q>“Ever wondered what real, honest snacking tastes like?”</q><div class="tags"><span>Pure Crunch. Zero Junk.</span></div></div></li>
-<li class="scene"><time>0:05–0:12</time><div><h3>The Raw Ingredients</h3><p>Millet flour, golden jaggery, pure country butter and roasted almonds tumble into place.</p><q>“No refined flour. No white sugar. No artificial preservatives. Just pure, farm-fresh goodness.”</q><div class="tags"><span>100% Maida-Free</span><span>Jaggery Sweetened</span><span>Zero Palm Oil</span></div></div></li>
-<li class="scene"><time>0:12–0:18</time><div><h3>The Fresh Bake</h3><p>A hot tray comes out of the oven, steam rising over rows of golden biscuits.</p><q>“Slow-baked in small batches to lock in every bit of flavor and nutrition.”</q><div class="tags"><span>Small-Batch Oven Baked</span></div></div></li>
-<li class="scene"><time>0:18–0:25</time><div><h3>The Tea-Time Dip</h3><p>Morning sunlight, a steaming glass of chai — the biscuit dips in and comes out intact.</p><q>“Your everyday tea-time ritual, made healthier without losing a single crumb of taste.”</q><div class="tags"><span>The Perfect Daily Crunch</span></div></div></li>
-<li class="scene"><time>0:25–0:30</time><div><h3>Order Fresh Today</h3><p>The Green Crunch pouch on a wooden tray with whole biscuits and a glass of milk.</p><q>“Treat yourself to wholesome bites. Order your batch fresh today.”</q><div class="tags"><span>Green Crunch Organics</span><span>Free Shipping on First Order</span></div></div></li>
-</ol>
-</div>
 </div>
 </section>
 
